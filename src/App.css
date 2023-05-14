@@ -5,15 +5,15 @@
   font-family: "Oswald", sans-serif;
   padding-bottom: 2rem;
 }
-.carousel {
+.carousel-images {
   position: relative;
   border-radius: 10px;
-  height: 450px;
-  width: 650px;
+  height: 400px;
+  max-width: 650px;
   margin: auto;
   overflow: hidden;
 }
-.carousel img {
+.carousel-images img {
   width: 99%;
   height: 99%;
   border-radius: 8px;
@@ -27,11 +27,15 @@
 .right {
   background-color: #fb666675;
   color: #fff;
-  position: absolute;
   padding: 10px 8px 8px 13px;
   margin: 0 20px;
-  top: 215px;
   border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 10px;
+  height: 25px;
+  width: 25px;
 }
 .left {
   left: 0;
@@ -39,7 +43,7 @@
 .right {
   right: 0;
 }
-.indicator {
+.carousel-indicator {
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -51,6 +55,6 @@
   height: 15px;
   border-radius: 50%;
 }
-.active{
-  background-color: #fa2020 ;
+.active {
+  background-color: #fa2020;
 }

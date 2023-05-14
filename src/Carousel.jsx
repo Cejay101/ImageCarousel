@@ -71,8 +71,8 @@ const Carousel = ({ images }) => {
   };
 
   return (
-    <>
-      <div className="carousel">
+    <div className="carousel">
+        <div className="carousel-images">
         <AnimatePresence>
           <motion.img
             key={currentIndex}
@@ -116,7 +116,7 @@ const Carousel = ({ images }) => {
           </motion.div>
         </div>
       </div>
-      <div className="indicator">
+      <div className="carousel-indicator">
         {images.map((_, index) => (
           <motion.div
             key={index}
@@ -129,7 +129,7 @@ const Carousel = ({ images }) => {
           ></motion.div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 export default Carousel;
